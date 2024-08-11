@@ -1,0 +1,52 @@
+{
+	"compilerOptions": {
+		/* Base Options: */
+		"target": "es2022",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"strictNullChecks": true,
+		"forceConsistentCasingInFileNames": true,
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"checkJs": true,
+		/* Bundled projects */
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"ES2022"
+		],
+		"noEmit": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"incremental": true,
+		"types": [
+			"node"
+		],
+		"paths": {
+			"~db/*": [
+				"./src/database/*"
+			],
+			"~routes/*": [
+				"./src/routes/*"
+			],
+			"~controllers/*": [
+				"./src/routes/*"
+			],
+			"~services/*": [
+				"./src/services/*"
+			],
+			"~/*": [
+				"./src/*"
+			],
+		}
+	},
+	"include": [
+		"src/**/*",
+		"server.ts"
+	]
+}

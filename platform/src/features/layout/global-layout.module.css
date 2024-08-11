@@ -1,0 +1,29 @@
+.header {
+	position: sticky;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.burger {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+.title {
+	margin: 0;
+	height: var(--app-shell-header-height);
+	line-height: var(--app-shell-header-height);
+
+	font-size: 2rem;
+	font-style: oblique;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1.2px;
+}
+
+.main {
+	padding-top: 1rem;
+}
